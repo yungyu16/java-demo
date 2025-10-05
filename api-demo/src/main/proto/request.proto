@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_outer_classname = "RequestProto";
+option java_multiple_files = true;
+
+message Request {
+    fixed32 kind = 1;
+    oneof id{
+        string   a = 100;
+        string   b = 101;
+        string   c = 102;
+    }
+    string   data = 2;
+    repeated  string   data2 = 5;
+    repeated  int32   ids = 6 [packed = true];
+}

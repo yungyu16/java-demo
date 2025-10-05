@@ -1,0 +1,12 @@
+syntax = "proto3";
+import "request.proto";
+import "response.proto";
+
+option java_outer_classname = "HelloServiceGRPC";
+option java_multiple_files = true;
+
+service HelloService {
+  rpc echo(Request) returns (Response) {
+    option deprecated = true;
+  };
+}
