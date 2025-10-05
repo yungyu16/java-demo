@@ -18,6 +18,7 @@
         <module>api-demo</module>
         <module>misc-demo</module>
         <module>net-demo</module>
+        <module>raft-demo</module>
     </modules>
     <dependencyManagement>
         <dependencies>
